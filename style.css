@@ -1,0 +1,160 @@
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 0 auto;
+  justify-content: center;
+  width: 98%;
+  /* background-color: lightblue; */
+}
+
+header {
+  /* background-color: lightcoral; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header-div {
+  /* background-color: bisque; */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.header-div:nth-child(2) {
+  background-color: lightgray;
+  display: block;
+  line-height: 0.75;
+  text-align: center;
+}
+
+.header-div:nth-child(2) p:nth-child(2) {
+  color: darkgray;
+  font-size: 12px;
+}
+.header-div:nth-child(3) {
+  background-color: gray;
+}
+
+#main-flex {
+  /* background-color: lightgoldenrodyellow; */
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+#main-flex * {
+  margin: 15px;
+}
+
+section {
+  /* background-color: lightgray; */
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+}
+
+article {
+  /* background-color: lightgreen; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.blog-content {
+  /* background-color: lightsalmon; */
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-family: Alatsi, sans-serif;
+  line-height: 0.85;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+
+article .button {
+  align-self: flex-end;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px;
+  padding: 2px;
+  text-align: center;
+  width: 150px;
+}
+
+img {
+  height: 250px;
+  width: 325px;
+}
+
+aside {
+  /* background-color: lightslategray; */
+  flex: 1;
+}
+
+#aside-box {
+  background-color: lightgray;
+  border: 2px solid black;
+  border-radius: 5%;
+  height: 320px;
+  width: 300px;
+}
+
+footer {
+  /* background-color: azure; */
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box {
+  /* background-color: aquamarine; */
+  border: 1px solid black;
+  height: 50px;
+}
+
+a:link {
+  color: black;
+  font-family: Fira Sans Extra Condensed, sans-serif;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+a:active {
+  color: gray;
+}
+
+nav a {
+  padding: 0px 25px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  #main-flex,
+  .blog-content {
+    flex-direction: column;
+  }
+  section {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+}
