@@ -1,21 +1,21 @@
+body {
+  font-family: Poppins, sans-serif;
+}
 #wrapper {
   display: flex;
   flex-direction: column;
   height: 0 auto;
   justify-content: center;
   width: 98%;
-  /* background-color: lightblue; */
 }
 
 header {
-  /* background-color: lightcoral; */
   display: flex;
   flex: 1;
   flex-direction: column;
 }
 
 .header-div {
-  /* background-color: bisque; */
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,7 @@ header {
 }
 
 .header-div:nth-child(2) {
-  background-color: lightgray;
+  background-color: rgb(224, 222, 222);
   display: block;
   line-height: 0.75;
   text-align: center;
@@ -34,14 +34,14 @@ header {
   font-size: 12px;
 }
 .header-div:nth-child(3) {
-  background-color: gray;
+  background-color: rgb(246, 242, 242);
 }
 
 #main-flex {
-  /* background-color: lightgoldenrodyellow; */
+  border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  margin: 10px 20px;
 }
 
 #main-flex * {
@@ -49,14 +49,12 @@ header {
 }
 
 section {
-  /* background-color: lightgray; */
   display: flex;
-  flex: 3;
+  flex: 4;
   flex-direction: column;
 }
 
 article {
-  /* background-color: lightgreen; */
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -64,7 +62,6 @@ article {
 }
 
 .blog-content {
-  /* background-color: lightsalmon; */
   display: flex;
   flex-direction: row;
 }
@@ -80,8 +77,13 @@ h2 {
 }
 
 p {
-  font-family: Poppins, sans-serif;
   font-size: 16px;
+}
+
+img {
+  width: 50vh;
+  height: 40vh;
+  object-fit: fill;
 }
 
 article .button {
@@ -93,13 +95,16 @@ article .button {
   width: 150px;
 }
 
-img {
-  height: 250px;
-  width: 325px;
+.post-btn {
+  align-self: center;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px;
+  padding: 5px 2px;
+  text-align: center;
+  width: 120px;
 }
 
 aside {
-  /* background-color: lightslategray; */
   flex: 1;
 }
 
@@ -107,20 +112,29 @@ aside {
   background-color: lightgray;
   border: 2px solid black;
   border-radius: 5%;
-  height: 320px;
-  width: 300px;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 footer {
-  /* background-color: azure; */
   display: flex;
   flex-direction: column;
 }
 
 .footer-box {
-  /* background-color: aquamarine; */
-  border: 1px solid black;
-  height: 50px;
+  padding: 30px;
+}
+
+.footer-box:nth-child(2) {
+  background-color: rgb(224, 222, 222);
+}
+
+.footer-box:nth-child(3) {
+  background-color: rgb(246, 242, 242);
 }
 
 a:link {
@@ -154,7 +168,7 @@ nav a {
   section {
     flex: 1;
   }
-}
-
-@media screen and (max-width: 400px) {
+  #main-flex {
+    align-items: center;
+  }
 }
