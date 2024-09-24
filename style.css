@@ -45,7 +45,7 @@ header {
 }
 
 #main-flex * {
-  margin: 15px;
+  margin: 10px;
 }
 
 section {
@@ -66,6 +66,11 @@ article {
   flex-direction: row;
 }
 
+.img-paragraph {
+  display: flex;
+  flex-direction: row;
+}
+
 h1 {
   font-family: Alatsi, sans-serif;
   line-height: 0.85;
@@ -81,9 +86,9 @@ p {
 }
 
 img {
-  width: 50vh;
   height: 40vh;
   object-fit: fill;
+  width: 50vh;
 }
 
 article .button {
@@ -131,10 +136,21 @@ footer {
 
 .footer-box:nth-child(2) {
   background-color: rgb(224, 222, 222);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: end;
+}
+
+th {
+  font-weight: 100;
+  text-align: start;
+  padding: 0vw 5vw;
 }
 
 .footer-box:nth-child(3) {
   background-color: rgb(246, 242, 242);
+  text-align: center;
 }
 
 a:link {
