@@ -73,6 +73,15 @@ article {
   flex-direction: row;
 }
 
+.img-paragraph img {
+  flex: 3;
+  max-height: 400px;
+}
+
+.img-paragraph p {
+  flex: 2;
+}
+
 h1 {
   font-family: Alatsi, sans-serif;
   line-height: 0.85;
@@ -87,10 +96,9 @@ p {
   font-size: 16px;
 }
 
-img {
-  height: 40vh;
-  object-fit: fill;
-  width: 50vh;
+.blogcontent img,
+.blog-content p {
+  flex: 1;
 }
 
 article .button {
@@ -109,6 +117,10 @@ article .button {
   padding: 5px 2px;
   text-align: center;
   width: 120px;
+}
+
+span {
+  text-align: center;
 }
 
 aside {
@@ -141,14 +153,15 @@ footer {
   border-top: 1px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: end;
 }
 
 th {
   font-weight: 100;
-  text-align: start;
+  max-width: 98%;
   padding: 0vw 5vw;
+  text-align: start;
 }
 
 .footer-box:nth-child(3) {
@@ -190,5 +203,8 @@ nav a {
   }
   #main-flex {
     align-items: center;
+  }
+  .img-paragraph {
+    flex-direction: column;
   }
 }
