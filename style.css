@@ -2,6 +2,7 @@ body {
   font-family: Poppins, sans-serif;
 }
 #wrapper {
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   height: 0 auto;
@@ -16,6 +17,7 @@ header {
 }
 
 .header-div {
+  border-bottom: 1px solid black;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -136,6 +138,7 @@ footer {
 
 .footer-box:nth-child(2) {
   background-color: rgb(224, 222, 222);
+  border-top: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -150,6 +153,7 @@ th {
 
 .footer-box:nth-child(3) {
   background-color: rgb(246, 242, 242);
+  border-top: 1px solid black;
   text-align: center;
 }
 
