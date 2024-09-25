@@ -209,3 +209,17 @@ nav a {
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 500px) {
+  section,
+  #wrapper {
+    max-width: 100%;
+    margin: auto 0;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  th {
+    padding: 2px;
+  }
+}
