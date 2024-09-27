@@ -18,6 +18,7 @@ header {
 }
 
 .header-div {
+  background-color: lightgray;
   border-bottom: 1px solid black;
   align-items: center;
   display: flex;
@@ -26,18 +27,19 @@ header {
 }
 
 .header-div:nth-child(2) {
-  background-color: rgb(224, 222, 222);
+  background-color: rgb(158, 155, 155);
   display: block;
   line-height: 0.75;
   text-align: center;
 }
 
-.header-div:nth-child(2) p:nth-child(2) {
-  color: darkgray;
+.header-div:nth-child(2) p:nth-child(1) {
+  color: white;
   font-size: 12px;
 }
 .header-div:nth-child(3) {
-  background-color: rgb(246, 242, 242);
+  background-color: black;
+  color: white;
 }
 
 #main-flex {
@@ -94,14 +96,20 @@ h2 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blogcontent img,
 .blog-content p {
   flex: 1;
 }
-
+#blog-text {
+  margin-bottom: 30vh;
+}
 article .button {
   align-self: flex-end;
   border: 1px solid black;
@@ -109,6 +117,17 @@ article .button {
   padding: 2px;
   text-align: center;
   width: 150px;
+}
+
+.posted,
+#posted {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+#posted {
+  width: 95%;
 }
 
 .post-btn {
@@ -130,7 +149,7 @@ aside {
 
 #aside-box {
   background-color: lightgray;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 5%;
   padding: 10px;
 }
@@ -138,6 +157,17 @@ aside {
 ul {
   list-style: none;
   padding: 0;
+}
+
+#author-box {
+  border: 1px solid black;
+}
+
+#author-box div:first-child {
+  background-color: lightgray;
+  border-bottom: 1px solid black;
+  padding: 5px 0px;
+  margin: 0;
 }
 
 footer {
@@ -150,7 +180,7 @@ footer {
 }
 
 .footer-box:nth-child(2) {
-  background-color: rgb(224, 222, 222);
+  background-color: rgb(158, 155, 155);
   border-top: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -166,7 +196,7 @@ th {
 }
 
 .footer-box:nth-child(3) {
-  background-color: rgb(246, 242, 242);
+  background-color: lightgray;
   border-top: 1px solid black;
   text-align: center;
 }
@@ -175,6 +205,7 @@ a:link {
   color: black;
   font-family: Fira Sans Extra Condensed, sans-serif;
   text-decoration: none;
+  font-weight: 100;
 }
 
 a:visited {
@@ -182,7 +213,7 @@ a:visited {
 }
 
 a:hover {
-  color: lightgray;
+  color: white;
 }
 
 a:active {
@@ -192,6 +223,10 @@ a:active {
 nav a {
   padding: 0px 25px;
   font-size: 20px;
+}
+p a:link,
+aside a:link {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 900px) {
@@ -208,6 +243,9 @@ nav a {
   .img-paragraph {
     flex-direction: column;
   }
+  .posted {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -217,7 +255,7 @@ nav a {
     margin: auto 0;
   }
   h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
   th {
     padding: 2px;
