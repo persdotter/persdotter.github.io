@@ -1,6 +1,9 @@
+/* default font for body */
 body {
   font-family: Poppins, sans-serif;
+  font-size: 14px;
 }
+/* flexbox-wrapper */
 #wrapper {
   border: 1px solid black;
   display: flex;
@@ -11,6 +14,7 @@ body {
   width: 98%;
 }
 
+/* header in three boxes */
 header {
   display: flex;
   flex: 1;
@@ -18,9 +22,9 @@ header {
 }
 
 .header-div {
+  align-items: center;
   background-color: lightgray;
   border-bottom: 1px solid black;
-  align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
@@ -42,17 +46,18 @@ header {
   color: white;
 }
 
-#main-flex {
-  border-bottom: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  margin: 10px 20px;
-}
-
+/* flexbox for main content */
 #main-flex * {
   margin: 10px;
 }
 
+#main-flex {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+/* main section with articles and content */
 section {
   display: flex;
   flex: 4;
@@ -60,56 +65,41 @@ section {
 }
 
 article {
+  border-bottom: 1px solid black;
   display: flex;
   flex: 1;
   flex-direction: column;
-  border-bottom: 1px solid black;
 }
 
-.blog-content {
-  display: flex;
-  flex-direction: row;
-}
-
+.blog-content,
 .img-paragraph {
   display: flex;
   flex-direction: row;
 }
 
-.img-paragraph img {
-  flex: 3;
-  max-height: 400px;
-}
-
-.img-paragraph p {
-  flex: 2;
-}
-
+/* headings */
 h1 {
   font-family: Alatsi, sans-serif;
-  line-height: 0.85;
   font-size: 40px;
+  line-height: 0.85;
 }
 
 h2 {
   font-size: 35px;
 }
 
-p {
-  font-size: 14px;
-}
-
-img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
+/* content size */
 .blogcontent img,
-.blog-content p {
+.blog-content p,
+aside {
   flex: 1;
 }
+
 #blog-text {
   margin-bottom: 30vh;
 }
+
+/* buttons for blog posts */
 article .button {
   align-self: flex-end;
   border: 1px solid black;
@@ -117,17 +107,6 @@ article .button {
   padding: 2px;
   text-align: center;
   width: 150px;
-}
-
-.posted,
-#posted {
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-#posted {
-  width: 95%;
 }
 
 .post-btn {
@@ -143,10 +122,28 @@ span {
   text-align: center;
 }
 
-aside {
-  flex: 1;
+/* shadow-frame for images */
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* dates for blogposts */
+.posted,
+#posted {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.posted {
+  padding-left: 25px;
+}
+
+#posted {
+  width: 95%;
+}
+
+/* aside search box, ul for post history */
 #aside-box {
   background-color: lightgray;
   border: 1px solid black;
@@ -159,6 +156,12 @@ ul {
   padding: 0;
 }
 
+/* form for contact */
+form {
+  width: 50%;
+}
+
+/* text about author at the bottom of blogposts */
 #author-box {
   border: 1px solid black;
 }
@@ -166,10 +169,11 @@ ul {
 #author-box div:first-child {
   background-color: lightgray;
   border-bottom: 1px solid black;
-  padding: 5px 0px;
   margin: 0;
+  padding: 5px 0px;
 }
 
+/* footer with three boxes */
 footer {
   display: flex;
   flex-direction: column;
@@ -188,6 +192,7 @@ footer {
   text-align: end;
 }
 
+/* table for links */
 th {
   font-weight: 100;
   max-width: 98%;
@@ -201,11 +206,12 @@ th {
   text-align: center;
 }
 
+/* links and navigation */
 a:link {
   color: black;
   font-family: Fira Sans Extra Condensed, sans-serif;
-  text-decoration: none;
   font-weight: 100;
+  text-decoration: none;
 }
 
 a:visited {
@@ -221,36 +227,46 @@ a:active {
 }
 
 nav a {
-  padding: 0px 25px;
   font-size: 20px;
+  padding: 0px 25px;
 }
+
 p a:link,
 aside a:link {
   text-decoration: underline;
 }
-
+/* layout for smaller screens */
 @media screen and (max-width: 900px) {
   #main-flex,
-  .blog-content {
-    flex-direction: column;
-  }
-  section {
-    flex: 1;
-  }
-  #main-flex {
-    align-items: center;
-  }
+  .blog-content,
   .img-paragraph {
     flex-direction: column;
   }
-  .posted {
-    width: 100%;
+
+  section {
+    flex: 1;
+  }
+
+  img {
+    align-self: center;
+    width: 50%;
+  }
+
+  #main-flex {
+    align-items: center;
+  }
+
+  .posted,
+  form {
+    width: 95%;
+    align-self: center;
   }
 }
 
 @media screen and (max-width: 500px) {
   section,
-  #wrapper {
+  #wrapper,
+  .posted {
     max-width: 100%;
     margin: auto 0;
   }
