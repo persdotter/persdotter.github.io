@@ -121,15 +121,21 @@ article .button {
   text-align: center;
 }
 
-/* placement and shadow-frame for images */
+/* placement and size images */
 img {
   float: left;
   margin-right: 15px;
   max-height: 300px;
+  max-width: 425px;
 }
 
 .img-paragraph img:nth-child(2) {
   float: right;
+}
+
+#about img {
+  max-height: 300px;
+  max-width: 300px;
 }
 
 /* dates for blogposts */
