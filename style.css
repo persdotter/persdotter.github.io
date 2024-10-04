@@ -282,6 +282,7 @@ aside a:link {
   }
 
   img {
+    float: none;
     width: 100%;
   }
 
