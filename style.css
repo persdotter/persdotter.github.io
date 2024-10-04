@@ -119,9 +119,9 @@ span {
 
 /* placement and shadow-frame for images */
 img {
-  max-height: 300px;
   float: left;
   margin-right: 15px;
+  max-height: 300px;
 }
 
 .img-paragraph img:nth-child(2) {
@@ -129,19 +129,19 @@ img {
 }
 
 /* dates for blogposts */
-.posted,
-#posted {
+.posted-main,
+.posted-blog {
   border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
 }
 
-.posted {
+.posted-main {
   max-width: 400px;
   padding-left: 20px;
 }
 
-#posted {
+.posted-blog {
   width: 95%;
 }
 
@@ -233,6 +233,7 @@ p a:link,
 aside a:link {
   text-decoration: underline;
 }
+
 /* layout for smaller screens */
 @media screen and (max-width: 900px) {
   #main-flex,
@@ -264,18 +265,22 @@ aside a:link {
   section,
   #wrapper,
   .posted {
-    max-width: 100%;
     margin: auto 0;
+    max-width: 100%;
   }
+
   img {
     width: 100%;
   }
+
   h2 {
     font-size: 25px;
   }
+
   th {
     padding: 2px;
   }
+
   .header-div:first-child {
     flex-direction: column;
     padding: 0px 0px 15px;
