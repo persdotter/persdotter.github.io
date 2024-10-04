@@ -120,11 +120,6 @@ article .button {
   text-align: center;
 }
 
-#back-to-top {
-  position: fixed;
-  text-align: end;
-}
-
 /* placement and shadow-frame for images */
 img {
   float: left;
@@ -163,7 +158,7 @@ form {
 
 /* text about author at the bottom of blogposts */
 #author-box {
-  border: 1px solid black;
+  border: 3px solid #f2efe5;
 }
 
 #author-box div:first-child {
