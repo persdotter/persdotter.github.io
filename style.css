@@ -114,8 +114,15 @@ article .button {
   width: 120px;
 }
 
-span {
+#post-buttons {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+}
+
+#back-to-top {
+  position: fixed;
+  text-align: end;
 }
 
 /* placement and shadow-frame for images */
