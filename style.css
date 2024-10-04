@@ -62,10 +62,11 @@ section {
 }
 
 article {
-  border-bottom: 1px solid black;
+  border-bottom: 5px solid #f2efe5;
   display: flex;
   flex: 1;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 /* headings */
@@ -129,19 +130,10 @@ img {
 }
 
 /* dates for blogposts */
-.posted-main,
-.posted-blog {
-  border-bottom: 1px solid black;
+.posted {
+  border-bottom: 3px solid #f2efe5;
   display: flex;
   justify-content: space-between;
-}
-
-.posted-main {
-  max-width: 400px;
-  padding-left: 20px;
-}
-
-.posted-blog {
   width: 95%;
 }
 
@@ -220,8 +212,14 @@ a:hover {
   color: white;
 }
 
+h2 a:hover,
+.button:hover,
+.post-btn:hover {
+  color: #b4b4b8;
+}
+
 a:active {
-  color: gray;
+  color: #e3e1d9;
 }
 
 nav a {
